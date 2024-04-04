@@ -1,0 +1,114 @@
+#msg-flash {
+    position: absolute;
+    top: 50;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px;
+    text-align: center !important;
+    margin-bottom: 0 !important;
+}
+
+body {
+    background-color: #f8f9fa !important;
+    height: 100vh;
+}
+
+.nameUser {
+    color: #3498db !important;
+    /* font-size: 1.1rem; */
+    font-style: italic;
+}
+
+
+.container {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+/* Style des sections */
+
+.hero,
+.about {
+    padding: 40px;
+    border-radius: 5px !important;
+}
+
+.about {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1,
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p,
+.about p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Style des boutons */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: 2px solid #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Style Nav */
+
+.nav-item:hover .nav-link::before {
+    transform: scaleX(0.8);;
+}
+
+.nav-link {
+    position: relative;
+    cursor: pointer;
+}
+
+.bienvenu{
+    cursor: pointer !important;
+}
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100% !important;
+    height: 1px;
+    background-color: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 400ms ease-in-out;
+}
